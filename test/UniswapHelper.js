@@ -1,5 +1,4 @@
 const {
-  time,
   loadFixture,
 } = require("@nomicfoundation/hardhat-toolbox/network-helpers");
 const { expect } = require("chai");
@@ -20,6 +19,8 @@ describe("UniswapHelper", function () {
 
   describe("Deployment", function () {
     it("Should compile", async function () {
+      await loadFixture(deployUniswapHelper);
+
       expect("We made it here!").to.equal("We made it here!");
     });
   });
