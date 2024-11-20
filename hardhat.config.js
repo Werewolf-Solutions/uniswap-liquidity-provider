@@ -1,8 +1,23 @@
 require("@nomicfoundation/hardhat-toolbox");
 
+const DEFAULT_COMPILER_SETTINGS = {
+  version: "0.8.15",
+  settings: {
+    optimizer: {
+      enabled: true,
+      runs: 1_000_000,
+    },
+    metadata: {
+      bytecodeHash: "none",
+    },
+  },
+};
+
 /** @type import('hardhat/config').HardhatUserConfig */
 module.exports = {
-  solidity: "0.8.27",
+  solidity: {
+    compilers: [DEFAULT_COMPILER_SETTINGS, { version: "0.8.27" }],
+  },
   networks: {
     ganache: {
       url: "http://127.0.0.1:8545",
