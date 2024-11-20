@@ -1,5 +1,33 @@
 require("@nomicfoundation/hardhat-toolbox");
 
+const LOW_OPTIMIZER_COMPILER_SETTINGS = {
+  version: "0.7.6",
+  settings: {
+    evmVersion: "istanbul",
+    optimizer: {
+      enabled: true,
+      runs: 2_000,
+    },
+    metadata: {
+      bytecodeHash: "none",
+    },
+  },
+};
+
+const LOWEST_OPTIMIZER_COMPILER_SETTINGS = {
+  version: "0.7.6",
+  settings: {
+    evmVersion: "istanbul",
+    optimizer: {
+      enabled: true,
+      runs: 1_000,
+    },
+    metadata: {
+      bytecodeHash: "none",
+    },
+  },
+};
+
 const DEFAULT_COMPILER_SETTINGS = {
   version: "0.8.15",
   settings: {
@@ -16,7 +44,11 @@ const DEFAULT_COMPILER_SETTINGS = {
 /** @type import('hardhat/config').HardhatUserConfig */
 module.exports = {
   solidity: {
-    compilers: [DEFAULT_COMPILER_SETTINGS, { version: "0.8.27" }],
+    compilers: [
+      DEFAULT_COMPILER_SETTINGS,
+      { version: "0.8.27" },
+      LOWEST_OPTIMIZER_COMPILER_SETTINGS,
+    ],
   },
   networks: {
     ganache: {

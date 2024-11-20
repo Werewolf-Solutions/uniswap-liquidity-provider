@@ -22,6 +22,26 @@ This is to understand how solidity versions control works.
 
   - mint new position https://docs.uniswap.org/contracts/v3/guides/providing-liquidity/mint-a-position
 
+# Branches
+
+# master
+
+Where I will merge the solution and the main branch when cloning
+
+## simple-swap
+
+Where I try to use the latest openzeppelin and this swap example https://github.com/Uniswap/uniswap-first-contract-example/blob/simple-swap-complete-example/test/SimpleSwap.test.js from this docs https://docs.uniswap.org/contracts/v3/guides/local-environment
+
+### Errors
+
+## liquidty examples
+
+Where I try this other example
+
+https://docs.uniswap.org/contracts/v3/guides/providing-liquidity/setting-up and https://docs.uniswap.org/contracts/v3/guides/providing-liquidity/mint-a-position
+
+### Errors
+
 # Example
 
 ## helper contract
