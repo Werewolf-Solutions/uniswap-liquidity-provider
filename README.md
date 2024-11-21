@@ -30,12 +30,6 @@ I have created 2 branches for different examples
 
 Where I will merge the solutions and the main branch when cloning
 
-### Errors
-
-```bash
-Error HH404: File @openzeppelin/contracts/token/ERC721/IERC721Metadata.sol, imported from @uniswap/v3-periphery/contracts/interfaces/INonfungiblePositionManager.sol, not found.
-```
-
 ## simple-swap
 
 Where I try to use the latest openzeppelin and this swap example https://github.com/Uniswap/uniswap-first-contract-example/blob/simple-swap-complete-example/test/SimpleSwap.test.js from this docs https://docs.uniswap.org/contracts/v3/guides/local-environment
